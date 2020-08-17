@@ -64,7 +64,7 @@ export class DebitoFila {
 
     public get fecha(): string {
         let dia: string = ('0' + this._fecha.getDate()).slice(-2);
-        let mes: string = ('0' + this._fecha.getMonth()).slice(-2);
+        let mes: string = ('0' + (this._fecha.getMonth() + 1)).slice(-2);
         let anno: string = this._fecha.getFullYear().toString();
         return dia + mes + anno;
     }

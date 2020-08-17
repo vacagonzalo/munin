@@ -3,5 +3,5 @@ export interface DebitoDB {
     cbu: string,
     importe: number,
     apellido: string,
-    fecha: Date
+    fecha: string
 }

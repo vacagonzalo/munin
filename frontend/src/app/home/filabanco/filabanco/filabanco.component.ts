@@ -17,7 +17,7 @@ export class FilabancoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.debitoServ.debitosBD.then( (filas) => {
+    this.debitoServ.getDebitosBD("2020-03-01").then( (filas) => {
       this.data = filas;
       console.log(this.data);
       this.debitoServ.generarArchivo(this.data);
